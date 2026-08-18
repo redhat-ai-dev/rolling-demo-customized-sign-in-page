@@ -17,11 +17,10 @@
 import { createPlugin } from '@backstage/core-plugin-api';
 
 /**
- * Plugin for the RHDH customized sign-in page.
+ * Legacy plugin instance for the RHDH customized sign-in page.
+ * @deprecated Use the default export of this package (New Frontend System) instead.
  * @public
  */
 export const rollingDemoCustomizedSignInPagePlugin = createPlugin({
   id: 'rolling-demo-customized-sign-in-page',
 });
-
-export { RollingDemoCustomizedSignInPage } from './components/RollingDemoCustomizedSignInPage';

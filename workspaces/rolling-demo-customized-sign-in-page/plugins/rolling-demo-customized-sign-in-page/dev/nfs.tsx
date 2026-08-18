@@ -14,8 +14,12 @@
  * limitations under the License.
  */
 
-export { default } from './plugin';
-export { RollingDemoCustomizedSignInPage } from './components';
+import ReactDOM from 'react-dom/client';
+import { createApp } from '@backstage/frontend-defaults';
+import rollingDemoCustomizedSignInPageModule from '../src/plugin';
 
-// Re-exported for backward compatibility with legacy (non-NFS) consumers.
-export { rollingDemoCustomizedSignInPagePlugin } from './legacy';
+const app = createApp({
+  features: [rollingDemoCustomizedSignInPageModule],
+});
+
+ReactDOM.createRoot(document.getElementById('root')!).render(app.createRoot());
