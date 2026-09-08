@@ -1,5 +1,8 @@
 # rolling-demo-customized-sign-in-page
 
+> [!WARNING]
+> This repository has been retired and will no longer be maintained. It has been moved to [redhat-developer/rhdh-rolling-demo-customized-sign-in-page](https://github.com/redhat-developer/rhdh-rolling-demo-customized-sign-in-page).
+
 This repository contains the `rolling-demo-customized-sign-in-page` RHDH frontend plugin. It is a custom workaround for the RHDH AI Rolling Demo Environment, that:
 
 - Displays a warning/info banner above the sign-in card (e.g. to inform first-time users about registration sync delays).
